@@ -3,9 +3,9 @@
 	"id": "dvd",
 	"version": "${version}",
 	"name": "dvd",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "描述!",
 	"authors": [
-		"Me!"
+		"Link"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"fox.dvd.DvdDataGenerator"
+		],
+		"client": [
+			"fox.dvd.DvdClient"
 		]
 	},
 	"mixins": [

@@ -1,5 +1,6 @@
 package fox.dvd;
 
+import fox.dvd.item.ModeItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,9 +16,10 @@ public class Dvd implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		// 当Minecraft处于可加载模组的状态时，这段代码会立即运行。
+		// 然而，某些内容（如资源）可能尚未初始化。
+		// 请谨慎操作。
+		ModeItems.registerModItems();
 		Dvd.LOGGER.info("Initializing");
 	}
 }
