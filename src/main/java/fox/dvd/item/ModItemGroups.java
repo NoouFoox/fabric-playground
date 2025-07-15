@@ -1,6 +1,7 @@
 package fox.dvd.item;
 
 import fox.dvd.Dvd;
+import fox.dvd.block.ModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,8 +18,10 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.DONKEY_MEAT))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.DONKEY_MEAT);
+                        entries.add(ModBlocks.MEN_ZI_BLOCK);
                         entries.add(Blocks.TNT);
                         entries.add(Items.DIAMOND);
+
                     })
                     .build()
     );

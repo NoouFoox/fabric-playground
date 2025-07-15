@@ -1,5 +1,6 @@
 package fox.dvd;
 
+import fox.dvd.block.ModBlocks;
 import fox.dvd.item.ModItemGroups;
 import fox.dvd.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -22,6 +23,7 @@ public class Dvd implements ModInitializer {
 		// 请谨慎操作。
 		ModItems.initialize();
 		ModItemGroups.initialize();
+		ModBlocks.initialize();
 		Dvd.LOGGER.info("Initializing");
 	}
 }
