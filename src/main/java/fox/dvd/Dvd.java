@@ -1,6 +1,7 @@
 package fox.dvd;
 
-import fox.dvd.item.ModeItems;
+import fox.dvd.item.ModItemGroups;
+import fox.dvd.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,7 +20,8 @@ public class Dvd implements ModInitializer {
 		// 当Minecraft处于可加载模组的状态时，这段代码会立即运行。
 		// 然而，某些内容（如资源）可能尚未初始化。
 		// 请谨慎操作。
-		ModeItems.initialize();
+		ModItems.initialize();
+		ModItemGroups.initialize();
 		Dvd.LOGGER.info("Initializing");
 	}
 }
