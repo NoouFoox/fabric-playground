@@ -14,7 +14,7 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final Block MEN_ZI_BLOCK = register(
             "men_zi_block",
-            AbstractBlock.Settings.create().strength(3.0f,3.0f)
+            AbstractBlock.Settings.create().requiresTool().strength(0.3f,0.3f)
     );
 
     private static Block register(String id, AbstractBlock.Settings settings) {
