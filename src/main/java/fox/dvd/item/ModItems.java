@@ -14,17 +14,25 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModItems {
-    public static FoodComponent DONKEY_MEAT_EAT = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3F).build();
-    public static final Item DONKEY_MEAT = registerItems("donkey_meat", Item::new, new Item.Settings().food(DONKEY_MEAT_EAT));
+    private static FoodComponent getFoodComponent(int nutrition, float saturation) {
+        return new FoodComponent.Builder().nutrition(nutrition).saturationModifier(saturation).build();
+    }
 
+    public static FoodComponent DONKEY_MEAT_EAT = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3F).build();
+
+    public static final Item DONKEY_MEAT = registerItems("donkey_meat", Item::new, new Item.Settings().food(DONKEY_MEAT_EAT));
+    public static final Item MEN_ZI = registerItems("men_zi", Item::new, new Item.Settings().food(getFoodComponent(5, 4.14F)));
+    public static final Item COOKED_DONKEY_MEAT = registerItems("cooked_donkey_meat", Item::new, new Item.Settings().food(getFoodComponent(8, 7.14F)));
     public static Item registerItems(String path, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Dvd.MOD_ID, path));
         return Items.register(registryKey, factory, settings);
     }
+
     //    加到原版物品栏里
-    public static void addItemToGroup(FabricItemGroupEntries entries){
+    public static void addItemToGroup(FabricItemGroupEntries entries) {
         entries.add(DONKEY_MEAT);
     }
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToGroup);
         Dvd.LOGGER.info("Registering Mod Items for " + Dvd.MOD_ID);

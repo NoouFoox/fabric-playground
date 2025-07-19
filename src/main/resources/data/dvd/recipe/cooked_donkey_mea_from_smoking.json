@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "dvd:donkey_meat",
+  "result": {
+    "id": "dvd:cooked_donkey_meat"
+  }
+}

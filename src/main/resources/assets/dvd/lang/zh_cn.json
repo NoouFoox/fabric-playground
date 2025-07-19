@@ -1,5 +1,7 @@
 {
   "item.dvd.donkey_meat": "驴肉",
+  "item.dvd.men_zi": "焖子",
+  "item.dvd.cooked_donkey_meat": "熟驴肉",
   "itemGroup.dvd.group": "过量进食",
-  "block.dvd.men_zi_block": "驴肉焖子"
+  "block.dvd.men_zi_block": "驴肉焖子块"
 }

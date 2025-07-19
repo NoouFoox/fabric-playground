@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dvd_group",
+  "key": {
+    "M": "dvd:cooked_donkey_meat",
+    "L": "minecraft:leather",
+    "W": "minecraft:wheat"
+  },
+  "pattern": [
+    "ML",
+    "WW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dvd:men_zi"
+  }
+}

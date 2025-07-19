@@ -19,6 +19,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.DONKEY_MEAT);
                         entries.add(ModBlocks.MEN_ZI_BLOCK);
+                        entries.add(ModItems.MEN_ZI);
+                        entries.add(ModItems.COOKED_DONKEY_MEAT);
+                        
                         entries.add(Blocks.TNT);
                         entries.add(Items.DIAMOND);
 
